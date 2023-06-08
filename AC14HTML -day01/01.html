@@ -26,12 +26,14 @@
         <!-- 只有伺服器下才支援 -->
     <!-- <img src="/AC14HTML -day01/">  -->
 
-    <!-- <figure>
+    <figure>
+        <img src="../pic001.jpg" alt="">
+        <img src="../pic001.jpg" alt="">
         <img src="../pic001.jpg" alt="">
         <figcaption>
             這是解釋文字
         </figcaption>
-    </figure> -->
+    </figure>
 
     <picture>
         <source srcset="img1.jpg" media="(min-width:1200px)">
@@ -40,10 +42,13 @@
     </picture>
 
 <!-- 表格 -->
-    <!-- 如果沒有border 跟 width會看不到     
-         thead 跟 tbody 跟 tfoot
+    <!-- 
+        -如果沒有border 跟 width會看不到     
+        -thead 跟 tbody 跟 tfoot 裡的td不能相互合併
+        先rol在col
     -->
     <table border="3" width="400">
+        <caption>我是表格標題</caption>
         <thead>
             <tr>
                 <th>科目</th>
@@ -65,11 +70,16 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>備註</th>
+                <th>備註1</th>
                 <td colspan="2">2</td>
             </tr>
             <tr>
-                <th>備註</th>
+                <th rowspan="2">備註2dddd</th>
+                <td>ddd</td>
+                <td>ddd</td>
+            </tr>
+            <tr>
+                <!-- <th>備註3</th> -->
                 <td>ddd</td>
                 <td>ddd</td>
             </tr>
