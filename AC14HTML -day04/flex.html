@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <!-- <html lang="en" dir="rtl"> -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            width: 600px;
+            height: 600px;
+            background-color: #ccc;
+            display: flex;
+            flex-wrap: wrap;
+            /* 
+                flex自動延展寬高 
+                - flex子物件會有block特性
+                - direction: rtl;由右至左的語言
+                - 主軸 main axis
+                    -flex-direction: row / row-reverse / column / column-reverse;
+                -justify-content: flex-start / flex-end / space-evenly / space-around /center;
+                    空間: 剩餘空間
+                    對象: 子物件
+                    作用: 對齊或分布
+                    軸向: 主軸
+                - 交叉軸 cross axis
+                    -flex-wrap: wrap / wrap-reverse;
+
+            */
+            /* flex-direction: row;
+            direction: rtl; */
+            /* lr 是left right */
+            /* writing-mode: vertical-lr; */
+            
+        }
+        .item{
+            width: 150px;
+            height: 150px;
+            background-color: #fa0;
+            margin: 2px;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+</html>
