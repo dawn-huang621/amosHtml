@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        li {
+            width: 16.5%;
+            height: 60px;
+            border: 1px solid;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+        .ul:nth-child(odd) li:nth-child(even){
+            background-color: antiquewhite;
+        }
+        .list:nth-child(even) ul:nth-child(odd){
+            background-color: antiquewhite;
+        }
+        /* .list:nth-child(2 of .item) */
+        /* 3以後包括3 
+        list div:nth-child(n+3)*/
+         /* 3 之前包括3  
+        list div:nth-child(-n+3)*/
+    </style>
+</head>
+<body>
+    <div class="list">
+        <ul>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+        </ul>
+        <ul>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+        </ul>
+        <ul>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+        </ul>
+        <ul>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+        </ul>
+    </div>
+</body>
+</html>

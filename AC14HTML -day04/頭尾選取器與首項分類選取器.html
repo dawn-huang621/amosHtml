@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:first-child 與 :first-of-type</title>
+    <style>
+        span {
+          display: block;
+        }
+        /* 不會有效 */
+        .list spay:first-child{ 
+          background-color: #fa0;
+        }
+        /* 會有效 */
+        .list span:first-of-type {
+          background-color: #fa0;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="list">
+        <div>div</div>
+        <div>div</div>
+        <span>span</span>
+        <span>span</span>
+        <div>div</div>
+        <div>div</div>
+        <span>span</span>
+      </div>
+</body>
+</html>
