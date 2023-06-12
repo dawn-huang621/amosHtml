@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2</title>
+    <style>
+        .news-block{
+            background-color: antiquewhite;
+        }
+        .events-block{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+
+    source依照順序，順序越前，越先下載
+    <video controls width="250">
+        <source src="/media/cc0-videos/flower.webm" type="video/webm">
+    
+        <source src="/media/cc0-videos/flower.mp4" type="video/mp4">
+    
+        Download the
+        <a href="/media/cc0-videos/flower.webm">WEBM</a>
+        or
+        <a href="/media/cc0-videos/flower.mp4">MP4</a>
+        video.
+    </video>
+    <br>
+
+    muted要自動撥放要使用muted靜音
+    lazyload捲動到視口一定距離再載入
+    
+    inline寬度不會有作用
+
+    表單
+    方法一: 需要id for才會連結
+    <div>
+        <form action="">
+            <label for="user_name">名稱</label>
+            <input type="text" id="user_name">
+        </form>
+    </div>
+
+    方法二
+    <div>
+        <form>
+            <label>
+                名稱:方法二不需要for，
+                <input type="text">
+            </label>
+        </form>
+    </div>
+
+
+    <section>
+        checkbox多選 沒有name
+        radio單選需要有name，否則勾選時選項會全部打勾
+        <div>
+            <label></label>
+            <input type="radio" >
+        </div>
+        <div>
+            <label for="">password:</label>
+            <input type="password" minlength="6" maxlength="10">
+        </div>
+        <div>
+            <label for="">檔案(file):</label>
+            <input type="file">
+        </div>
+        <div>
+            <label for="">色彩(color)</label>
+            <input type="color">
+        </div>
+        <div>
+            <label for="">區間(range)</label>
+            <input type="range" min="-50" max="+50" step="10">
+        </div>
+        <div>
+            <input type="submit">
+            <input type="reset">
+            <input type="button">
+        </div>
+    
+    </section>
+    
+
+    <div class="news-block">
+        <h1>News</h1>
+        <ul>
+            <li>最新消息1</li>
+            <li>最新消息2</li>
+            <li>最新消息3</li>
+            <li>最新消息4</li>
+            <li>最新消息5</li>
+        </ul>
+    </div>
+
+    <div class="events-block">
+        <ul>
+            <li>最新活動1</li>
+            <li>最新活動2</li>
+            <li>最新活動3</li>
+            <li>最新活動4</li>
+            <li>最新活動5</li>
+        </ul>
+    </div>
+    觀看影片
+    5678,10,11
+
+class
+https://ithelp.ithome.com.tw/articles/10216275
+    選取器無效不到的原因 優先權，選取器寫錯，
+    優先權
+    ID > class> Tag
+
+</body>
+</html>
