@@ -1,0 +1,661 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght');
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Noto Sans TC', sans-serif;
+    /* border: 1px solid; */
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.primary-btn{
+    width: fit-content;
+    margin: auto;
+    display: inline-block;
+    padding: 12px 32px;
+    color: #F9FAFB;
+    border-radius: 4px;
+    background-color: #ff133e;
+    cursor: pointer;
+}
+.primary-btn:active{
+    box-shadow: 0px 0px 0px 5px rgba(255,19,62, .3);
+}
+nav{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+nav .bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px;
+    background-color: white;
+    box-shadow: 0 10px 15px -3px rgba(113,128,150,0.1),0 4px 6px -2px rgba(113,128,150,0.05);
+}
+nav .logo h1{
+    font-size: 18px;
+}
+nav .logo a:hover{
+    color: rgba(255, 19, 62);
+}
+nav .logo img{
+    height: 18px;
+}
+nav .logo{
+    display: flex;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav ul li{
+    padding: 20px 16px;
+    /* border: 1px solid; */
+    border-bottom: 4px solid transparent;
+}
+nav ul li:nth-child(1){
+    margin-top: 2px;
+}
+nav ul li:hover{
+    border-bottom: 4px solid #ff133e;
+}
+nav ul li a{
+    font-size: 18px;
+    display: block;
+    color: black;
+}
+/* 是border :hover
+nav ul li:hover{
+    border-bottom: 4px solid #ff133e ;
+}
+*/
+
+.banner{
+    margin: 0 39.6px;
+    margin-top: 96px;
+    padding: 0 24px;
+}
+.banner picture{
+    width: 1392px;
+    margin: auto;
+}
+.banner img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.teach-content{
+    margin: 0 39.6px;
+    margin-top: 96px;
+    margin-bottom: 192px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+.teach-content .title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.teach-content .title h1{
+    margin-bottom: 32px;
+    padding-bottom: 12px;
+    font-size: 30px;
+}
+.teach-content .title h4{
+    font-size: 20px;
+}
+.teach-content .card-list{
+    width: 1392px;
+    margin: auto;
+    margin-top: 64px;
+    display: flex;
+    justify-content: space-between;
+}
+.teach-content .card{
+    width: 424px;
+    margin-bottom: 40px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.teach-content .card img{
+    width: 230px;
+}
+.teach-content .card h3{
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+.teach-content .card p{
+    line-height: 24px;
+}
+
+.teachers-content{
+    background-color: #F9FAFB;
+}
+.teachers-content > div{
+    max-width: 1440px;
+    margin: auto;
+    padding-bottom: 64px;
+}
+.teachers-content .title{
+    max-width: 813px;
+    margin: auto;
+}
+.teachers-content .title h1{
+    padding: 20px 0;
+    font-size: 30px;
+}
+.teachers-content .title p{
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+.teachers-content .card-collection{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.teachers-content .card{
+    width: 700px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 40px;
+    /* margin: 28px; */
+    background-color: 4px 6px -1px rgba(113,128,150,0.1),0 2px 4px -1px rgba(113,128,150,0.06);
+    margin-bottom: 36px;
+    /* border: 1px solid; */
+}
+.teachers-content .card .pic{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.pic img{
+    width: 100%;
+    height: 100%;
+}
+.teachers-content .card .person-info{
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.teachers-content .skill{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: 1px solid; */
+    /* border: 1px solid; */
+}
+.teachers-content .skill-content::after{
+    content: '';
+    margin-top: 20px;
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: #ff133e;
+}
+.teachers-content .skill p{
+    padding-bottom: 20px;
+}
+.teachers-content .skill i{
+    font-size: 20px;
+    margin-right: 10px;
+    color: #ccc;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.teachers-content .skill i:hover{
+    color: black;
+}
+.teachers-content .card .describe{
+    padding: 20px 0;
+    border-top: 1px solid rgb(229, 231, 235);
+    letter-spacing: normal;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+}
+.teachers-content .link-style{
+    color: #ff133e;
+}
+.teachers-content .link-style:hover{
+    text-decoration: #ff133e underline;
+}
+.teachers-content .other-courses{
+    padding-top: 20px;
+    margin-bottom: 20px;
+    border-top: 1px solid rgb(229, 231, 235);
+}
+.teachers-content .course-name a{
+    margin-right: 16px;
+    margin-bottom: 16px;
+    display: inline-block;
+    padding: 4px 12px;
+    color: #ff133e;
+    border: 1px solid #ff133e;
+    border-radius: 4px;
+    background-color: white;
+    transition: all 0.3s;
+}
+.teachers-content .course-name a:hover{
+    color: white;
+    background-color: #ff133e;
+
+} 
+
+
+section.news{
+    margin: auto;
+    padding-bottom: 124px;
+    display: flex;
+    flex-direction: column;
+    background-color: #F9FAFB;
+    /* background-color: #ccc; */
+}
+.news h1{
+    width: fit-content;
+    margin: auto;
+    padding-bottom: 12px;
+    margin-bottom: 32px;
+    font-size: 30px;
+}
+.news h1::after{
+    content: '';
+    margin: auto;
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #ff133e;
+}
+section.news .content{
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.news .content article{
+    width: 700px;
+    margin-bottom: 20px;
+}
+.news article a{
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+.news article a:hover{
+    color: #ff133e;
+    cursor: pointer;
+}
+.news article p{
+    font-weight: 300;
+}
+
+
+.short-course{
+    color: white;
+    background-color: #29303E;
+}
+.short-course > div{
+    width: 1440px;
+    margin: auto;
+    display: flex;
+    padding: 0px 170px;
+    /* border: 1px solid wheat; */
+}
+.short-course h1{
+    width: 1440px;
+    margin: auto;
+    padding: 0px 170px;
+    padding-top: 80px;
+    font-size: 30px;
+    margin-bottom: 32px;
+}
+.short-course .title p{
+    width: 552px;
+    font-size: 20px;
+    color: #D3D6DB;
+}
+.short-course .container{
+    position: relative;
+    /* width: 552px;
+    height: 184px; */
+    /* margin: 80px 0; */
+    padding: 80px 20px;
+    background-color: #ff133e;
+    z-index: 0;
+    /* border: 3px solid rgb(255, 255, 255); */
+}
+.short-course .container ul{
+    position: absolute;
+    bottom: 10px;
+    left: -32px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+.short-course .container ul li{
+    width: 8px;
+    height: 8px;
+    margin-bottom: 10px;
+    background-color: #D3D6DB;
+    cursor: pointer;
+}
+.short-course .container .item{
+    width: 552px;
+    height: 184px;
+    display: flex;
+    overflow: scroll;
+}
+.short-course .course-carousel{
+    width: 1556px;
+    height: 184px;
+    display: flex;
+}
+.short-course .course-carousel .course-introduction{
+    width: 552px;
+    height: 100%;
+    /* border: 1px solid wheat; */
+}
+.short-course .course-carousel .course-introduction h3{
+
+}
+
+
+.recent-courses{
+    background-color: rgb(41, 48, 62);
+    padding-top: 70px;
+}
+.recent-courses h1{
+    width: 1440px;
+    margin: auto;
+    /* margin-left: 56px; */
+    font-size: 30px;
+    color: white;
+}
+.recent-courses > div{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+.recent-courses .banner{
+    width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+}
+.recent-courses .card{
+    width: 415px;
+    border-radius: 8px;
+    background-color: white;
+    overflow: hidden;
+    cursor: pointer;
+    /* border: 1px solid white; */
+}
+.recent-courses .class-item{
+    padding-bottom: 12px;
+    border-bottom: 0.5px solid #ccc;
+}
+.recent-courses .info{
+    margin: 8px;
+}
+.recent-courses .info i{
+    color: #ff133e;
+}
+.recent-courses .info p{
+    padding: 10px 0;
+    color: #ccc;
+}
+.recent-courses .info p .class-degree{
+    color: #ff133e;
+}
+.recent-courses .more-btn{
+    width: fit-content;
+    margin: auto;
+    margin-top: 30px;
+    /* 因為下面自適應寬度 */
+}
+
+.planning-path-courses{
+    width: 960px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.planning-path-courses h1{
+    padding: 20px 0;
+    font-size: 30px;
+    font-weight: 900;
+}
+.planning-path-courses h1::after{
+    content: '';
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: #ff133e;
+}
+.planning-path-courses .class-list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.planning-path-courses .card{
+    margin: 40px 0;
+    width: 450px;
+    /* border: 1px solid; */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 15px -3px rgba(113,128,150,0.1),0 4px 6px -2px rgba(113,128,150,0.05);
+}
+.planning-path-courses .card h2{
+    padding-bottom: 10px;
+    border-bottom: 0.5px solid #ccc;
+}
+.planning-path-courses .card p{
+    padding-top: 10px;
+}
+.planning-path-courses .card .info{
+    padding: 10px;
+}
+.planning-path-courses .go-course{
+    display: block;
+    margin: 10px 0;
+    color: #ff133e;
+}
+.planning-path-courses .go-icon{
+    margin: 0;
+}
+.planning-path-courses .go-icon:hover{
+    margin-left: 10px;
+}
+
+
+.featured-article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 224px;
+}
+.featured-article h1{
+    font-size: 30px;
+}
+.featured-article h1::after{
+    content: '';
+    margin: auto;
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #ff133e;
+}
+.featured-article > div{
+    width: 1440px;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.featured-article .card{
+    width: 456px;
+}
+.featured-article .card img{
+    width: 100%;
+    height: 240px;
+    border-radius: 6px;
+}
+.featured-article .card .article-name{
+    display: block;
+    font-size: 24px;
+    margin-top: 20px;
+}
+.featured-article .card .article-name:hover{
+    color: #ff133e;
+}
+.featured-article .card .author{
+    margin-top: 12px;
+    color: rgb(229, 231, 235);
+}
+.featured-article > a{
+    margin: 64px;
+}
+
+.student-comments{
+    text-align: center;
+}
+.student-comments h1{
+    font-size: 30px;
+    margin-bottom: 32px;
+}
+.student-comments h1::after{
+    content: '';
+    margin: auto;
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: #ff133e;
+}
+.student-comments > div{
+    position: relative;
+    height: 620px;
+    display: flex;
+    flex-direction: column;
+}
+.student-comments .student-recommendation{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    overflow: scroll;
+    border: 1px solid;
+}
+.student-comments .student-recommendation li{
+    text-align: left;
+    margin: auto 16px;
+    padding: 24px;
+    flex: 0 0 250px;
+    border: 0.8px solid #ccc;
+    border-radius: 8px;
+}
+.student-comments .student-information{
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+}
+.student-comments .squre-menu{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+}
+.student-comments .squre-menu li{
+    width: 8px;
+    height: 8px;
+    background-color: #ccc;
+    margin-right: 12px;
+    cursor: pointer;
+}
+.student-comments .student-information img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.student-comments .student-information span{
+    margin: 10px;
+}
+
+
+
+.related-information{
+    background-color: #29303E;
+    margin-top: 96px;
+    padding: 64px;
+}
+.related-information .content{
+    width: 1440px;
+    margin: auto;
+    display: flex;
+}
+.related-information .connection{
+    width: 40%;
+}
+.related-information .connection > div{
+    padding-top: 14px;
+    padding-bottom: 40px;
+}
+.related-information .connection a{
+    color: white;
+}
+.related-information .other-content{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+}
+.related-information .other-content > div{
+    width: 33.33%;
+    padding-bottom: 64px;
+}
+.related-information .other-content > div h3{
+    padding-bottom: 20px;
+    color: white;
+}
+.related-information .other-content > div a{
+    font-weight: 500;
+    color: white;
+}
+.related-information .connect-icon{
+    width: 1440px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+.related-information .connect-icon li{
+    width: 77.5px;
+    height: 68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.related-information .connect-icon i{
+    margin: 0 12px;
+    font-size: 30px;
+    color: #D3D6DB;
+}
+footer{
+    padding: 16px 8px;
+    text-align: center;
+    color: white;
+    background-color: #181E2D;
+}
