@@ -7,6 +7,10 @@
     font-family: 'Noto Sans TC', sans-serif;
     /* border: 1px solid; */
 }
+*::selection{
+    color: #F9FAFB;
+    background-color: #ff133e;
+}
 a{
     text-decoration: none;
     color: black;
@@ -55,7 +59,6 @@ nav ul{
     align-items: center;
 }
 nav ul li{
-    padding: 20px 16px;
     /* border: 1px solid; */
     border-bottom: 4px solid transparent;
 }
@@ -66,6 +69,7 @@ nav ul li:hover{
     border-bottom: 4px solid #ff133e;
 }
 nav ul li a{
+    padding: 20px 16px;
     font-size: 18px;
     display: block;
     color: black;
@@ -274,6 +278,7 @@ section.news{
     width: 30px;
     height: 2px;
     background-color: #ff133e;
+    margin-top: 20px;
 }
 section.news .content{
     max-width: 1440px;
@@ -445,6 +450,7 @@ section.news .content{
     width: 40px;
     height: 2px;
     background-color: #ff133e;
+    margin-top: 20px;
 }
 .planning-path-courses .class-list{
     display: flex;
@@ -543,6 +549,7 @@ section.news .content{
     display: block;
     width: 40px;
     height: 2px;
+    margin-top: 20px;
     background-color: #ff133e;
 }
 .student-comments > div{
@@ -556,11 +563,12 @@ section.news .content{
     display: flex;
     align-items: flex-start;
     overflow: scroll;
-    border: 1px solid;
+    /* border: 1px solid; */
 }
 .student-comments .student-recommendation li{
     text-align: left;
-    margin: auto 16px;
+    margin-left: 16px;
+    margin-right: 16px;
     padding: 24px;
     flex: 0 0 250px;
     border: 0.8px solid #ccc;
