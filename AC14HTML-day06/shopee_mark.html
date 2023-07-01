@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>蝦皮標籤</title>
+    <style>
+        .card{
+            position: relative;
+            margin-left: 10px;
+            width: 300px;
+            border: 1px solid;
+        }
+        .tag{
+            position: absolute;
+            top: 10px;
+            left: -10px;
+            width: 30px;
+            height: 10px;
+            background-color: #f40;
+        }
+        .tag::after{
+            content: '';
+            position: absolute;
+            width: 0px;
+            height: 0px;
+            border-top: 6px solid #f40;
+            border-left: 8px solid #0000;
+            top: 100%;
+            left: 1px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="pic">
+            <img src="https://picsum.photos/300/200/?random=10">
+        </div>
+        <div class="text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore laudantium, ab rem dolores ea, in sed officia sunt saepe accusamus quos velit illo minus perferendis blanditiis, totam amet facere expedita!
+        </div>
+        <div class="tag"></div>
+    </div>
+</body>
+</html>

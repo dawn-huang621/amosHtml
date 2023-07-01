@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>em and rem</title>
+    <style>
+        :root{
+            font-size: 100px;
+        }
+        .A{
+            font-size: 50px;
+        }
+        .B{
+            font-size: 0.5em;
+        }
+        .C{
+            font-size: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    國root
+    <div class="A">
+        國a
+        <div class="B">
+            國b
+            <div class="C">
+                國root c
+            </div>
+        </div>
+    </div>
+</body>
+</html>
