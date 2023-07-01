@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex{
+            width: 600px;
+            height: 600px;
+            background-color: #ccc;
+            display: flex;
+        }
+        .item{
+            width: 250px;
+            height: 150px;
+            background-color: red;
+            margin: 5px;
+            /* 這個可以超出內容 */
+            flex-shrink: 0;
+        }
+        /* .item2{
+            flex-grow: 2;
+        }
+        .item3{
+            flex-grow: 1;
+        } */
+        .item2{
+            flex-shrink: 2;
+        }
+        .item3{
+            flex-shrink: 4;
+        }
+    </style>
+</head>
+<body>
+<!--     
+    order控制主軸
+
+    取得主軸上的剩餘空間
+    1 flex-grow 伸展值
+    2 flex-shrink收縮值
+    3 flex-basis基本值 
+-->
+    <div class="flex">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+    </div>
+</body>
+</html>

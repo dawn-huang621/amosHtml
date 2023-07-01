@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex{
+            width: 600px;
+            height: 600px;
+            background-color: #ccc;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            /* 控制 彈性列 在父層 空間中交叉軸的對其與分布 */
+            align-content: flex-end;
+            /* 控制 子物件 在彈性列 中 交叉軸的對齊 */
+            /* align-items: stretch; */
+        }
+        .item{
+            width: 150px;
+            height: 150px;
+            background-color: #f00;
+            color: #fff;
+            font-size: 42px;
+            margin: 5px;
+        }
+        .item:first-child{
+            height: 200px;
+        }
+        .item:nth-child(5){
+            height: 250px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+</html>
