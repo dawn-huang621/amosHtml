@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        *{
+          margin: 0;
+          padding: 0;
+        }
+        .card{
+            position: relative;
+            width: 300px;
+            overflow: hidden;
+        }
+        .card img{
+            width: 100%;
+            height: 100%;
+            vertical-align: top;
+        }
+        .card .txt{
+            /* box-sizing: border-box; */
+            bottom: 0;
+            top: 0;
+            left: 0;
+            right: 0;
+            position: absolute;
+            background-color: #0008;
+            color: #fff;
+            padding: 20px;
+            transform: translateY(100%);
+            transition: 1s;
+        }
+        .card:hover .txt{
+            transform: translateY(0%);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="pic">
+            <img src="https://picsum.photos/300/200/?random=10">
+        </div>
+        <p class="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. In sunt vitae necessitatibus. Maiores cum ex nemo rerum odio temporibus quaerat quam quia laboriosam porro qui ea placeat consequuntur, voluptates optio?</p>
+    </div>
+</body>
+</html>

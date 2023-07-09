@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rwd FontSize</title>
+</head>
+<style>
+    /* 方法一 */
+    /* h1{ 
+            font-size: 10vw;
+        } */
+    /* 方法二 */
+    h1{
+        font-size: clamp(22px, 3.96530vw, 42);
+        /* 
+        3.96530vw -> 32px / 807 px * 100
+        807 -> 1200 - 393(距離)
+        42 - 22 = 32px 字大小
+         */
+    }
+</style>
+<body>
+    <h1>武備紅寶石</h1>
+    <!-- clamp用法 -->
+    <!-- https://developer.mozilla.org/zh-CN/docs/Web/CSS/clamp -->
+</body>
+</html>

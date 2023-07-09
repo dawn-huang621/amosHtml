@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            
+        }
+        .mv{
+            position: relative;
+            width: 50%;
+        }
+        .mv::after{
+            display: block;
+            content: '';
+            width: 100%;
+            padding-bottom: 56.25%;
+        }
+        .mv iframe{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        @media screen and (min-width: 768px) {
+            .card{
+                width: 1200px;
+            }
+        }
+        @media screen and (min-width: 1024px) {
+            .card{
+                width: 600px;
+                display: flex;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="card">
+            <div class="mv">
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/-3hf-Nr0KHY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ipsa quod harum ab, quisquam, cumque consectetur eius veniam alias magnam non itaque perferendis dolor, explicabo nobis et distinctio? Voluptate, eius.</p>
+        </div>
+    </section>
+</body>
+</html>
