@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>漢堡菜單</title>
+    <style>
+        *{
+          margin: 0;
+          padding: 0;
+        }
+        .main-header{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: rgb(212, 206, 206);
+            position: relative;
+        }
+        .logo{
+            width: 80px;
+        }
+        .logo a{
+            display: block;
+        }
+        .logo img{
+            width: 100%;
+            vertical-align: middle;
+        }
+        .hb{
+            width: 40px;
+            height: 40px;
+            border: 1px solid rgb(115, 100, 100);
+            box-sizing: border-box;
+            position: relative;
+        }
+        .hb span{
+            width: 80%;
+            height: 4px;
+            position: absolute;
+            inset: 0;
+            margin: auto;
+            background-color: red;
+        }
+        .hb span:first-child{
+            transform: translateY(-200%);
+        }
+        .hb span:last-child{
+            transform: translateY(200%);
+        }
+        .main-nav{
+            display: none;
+            position: absolute;
+            background-color: rgb(235, 163, 69);
+            top: 100%;
+            left: 10px;
+            right: 10px;
+        }
+        #menu-switch{
+            display: none;
+        }
+        #menu-switch:checked ~ .main-header .main-nav{
+            display: block;
+        }
+        .main-nav a{
+            display: block;
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+        }
+        .main-nav a + a{
+            border-top: 1px solid #fff;
+        }
+        @media screen and (min-width: 768px) {
+            .hb{
+                display: none;
+            }
+            .main-nav{
+                display: flex;
+                position: relative;
+                background-color: transparent;
+            }
+            .main-nav a + a{
+                border: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="menu-switch">
+    <header class="main-header">
+        <div class="logo">
+            <a href="#">
+                <img src="https://picsum.photos/80/40/?random=10">
+            </a>
+        </div>
+        <label class="hb" for="menu-switch">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav class="main-nav">
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+</body>
+</html>
